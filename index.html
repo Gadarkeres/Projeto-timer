@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temporizador</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="favicon-16x16.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h1>Temporizador de estudos</h1>
+       
+        <div id="display" class="display">00:00:00</div>
+        <section class="input">
+        <label for="hour"> Horas:
+            <input type="number" name="hour" id="hour" max="99" min="0" value="01" >
+        </label>
+        <label for="minute"> Minutos:
+            <input type="number" name="minute" id="minute" max="59" min="0" value="00">
+        </label>
+        <label for="seconds"> Segundos:
+            <input type="number" name="seconds" id="seconds" max="59"  min="0" value="00">
+        </label>
+        </section>
+        <div class="button">
+            <button id="start">Iniciar</button>
+            <button id="changemode">Trocar modo</button>
+            <button id="reset">Resetar</button>
+        </div>
+        <div class="mode" id="modeButton">
+            <button id="modeselect">Selecione o modo</button>
+        </div>
+    </div>
+   <audio src="audio/timer.mp3" style="display: none;" id="timerAudio" preload="auto"></audio>
+</body>
+</html>
