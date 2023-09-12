@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const minutes = document.querySelector("#minute");
         const seconds = document.querySelector("#seconds");
         const error = document.querySelector('#error');
+        btn_start.style.display ='none'
 
         let duration = (parseInt(hours.value) * 60 * 60) + (parseInt(minutes.value) * 60) + parseInt(seconds.value);
 
@@ -58,6 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
             timer -= 1;
 
             if (timer < 0) {
+                btn_start.style.display ='inline-block'
                 clearInterval(intervalId); 
                 display.innerHTML = 'Finalizado!'
                 changemode() 
@@ -88,6 +90,7 @@ document.addEventListener('DOMContentLoaded', function() {
         hours.value = '00'; 
         minutes.value = '00'; 
         seconds.value = '05'; 
+        btn_start.style.display ='inline-block'
     }
 });
 
