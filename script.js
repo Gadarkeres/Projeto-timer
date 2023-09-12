@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const seconds = document.querySelector('#seconds');
         hours.value = '00'; 
         minutes.value = '00'; 
-        seconds.value = '00'; 
+        seconds.value = '05'; 
     }
 });
 
